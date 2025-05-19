@@ -1,0 +1,153 @@
+body {
+    background-color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0%;
+    z-index: 0;
+}
+
+.iconbar {
+    height: 50px;
+    width: 50px;
+}
+
+#navbar {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    box-shadow: 0px 0px 7px #000000;
+    z-index: 100;
+    position: fixed;
+    top: 0%;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+}
+
+.navelem {
+    display: flex;
+    padding: 20px;
+    background-color:transparent;
+}
+.navelem a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    transition: 300ms;
+}
+
+.navelem a:hover {
+    color: #ffe600;
+    transition: 300ms;
+    text-shadow: 0px 0px 7px #ffe600;
+
+}
+
+.imgintro {
+    width: 100%;
+    background-image: url(./public/background.png);
+    height: 100vh;
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.imgintro h1 {
+    font-size: 90px;
+    margin: 0%;
+}
+
+.imgintro img {
+    height: 100px;
+    padding: 15px;
+}
+
+.imgintro div {
+    display: flex;
+    align-items: center;
+}
+
+.imgintro p {
+    font-size: 25px;
+    margin: 0%;
+}
+
+#whoare {
+    display: flex;
+    height: 50vh;
+    background-color: #0c0c0c;
+}
+
+.whopic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 50%;
+    background-image: url(./public/imagewho.png);
+}
+
+#whoare .whopic h1 {
+    font-size: 90px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 40px black;
+    font-weight: 600;
+}
+
+.textwho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: rgb(26, 26, 26);
+    gap: 10px;
+    padding: 10px;
+}
+
+.cardwho {
+    background-color: white;
+    height: 70%;
+    width: 90%;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 40px black;
+    padding: 30px;
+}
+
+.cardwho p {
+    color: #000000;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+#clientes {
+    height: 150px;
+    background-color: #151515;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 75px;
+    font-weight: bold;
+    color: white;
+    height: 150px;
+    border-radius: 5px;
+    text-align: center;
+    animation: flash 1s infinite alternate;
+}
+
+

@@ -1,0 +1,80 @@
+---
+import "../pages/index.css"; 
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="shortcut icon" href="./public/icon.png" type="image/x-icon">
+		<title>Astro</title>
+	</head>
+	<body>
+		<head>
+			<nav id="navbar">
+				<div class="navicon">
+						<img src="./public/icon.png" alt="Logo" class="iconbar"/>
+					</a>
+				</div>
+				<div>
+					<ul class="navbar">
+						<li class="navelem"><a href="/">Home</a></li>
+						<li class="navelem"><a href="/about">About</a></li>
+						<li class="navelem"><a href="/contact">Contact</a></li>
+						<li class="navelem"><a href="/projects">Projects</a></li>
+					</ul>
+				</div>
+			</nav>
+		</head>
+		<section class="imgintro">
+				<div class="logo">
+					<img src="./public/icon.png" alt="" class="">
+					<h1>Smart Visuals</h1>
+				</div>
+				<p>We Made Your Visual Dreams</p>
+		</section>
+		<section id="whoare">
+			<div class="whopic">
+				<h1>Quienes<br>Somos</h1>
+			</div>
+				<div class="textwho">
+					<div class="cardwho">
+						<p>
+							Somos un grupo de diseñadores en donde nos encargamos de realizar
+							proyectos para el ámbito multimedia, streaming y eventos de 
+							creadores de contenido. <br>
+							Llevamos más de 5 años en el mercado con una buena cantidad de 
+							proyectos realizados y clientes contentos con el resultado final
+						</p>
+					</div>
+			</div>
+		</section>
+		<section id="clientes">
+			<div class="counter">
+    			<p>+<span id="client-count">64</span> Clientes</p>
+			</div>
+		</section>
+		<script>
+			function animateCount(target, start, end, duration) {
+    			let obj = document.getElementById(target);
+    			let range = end - start;
+    			let current = start;
+    			let increment = range / (duration / 20);
+    
+    			let timer = setInterval(() => {
+		        	current += increment;
+		        	obj.textContent = Math.round(current);
+		        	if (current >= end) {
+		        	    clearInterval(timer);
+					obj.textContent = end;
+ 	        }}, 20);
+			
+			}
+
+			animateCount("client-count", 0, 64, 2000); // Duración: 2 segundos
+
+		</script>
+	</body>
+</html>
