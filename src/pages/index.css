@@ -51,7 +51,7 @@ body {
 
 .imgintro {
     width: 100%;
-    background-image: url(./public/background.png);
+    background-image: url(https://media.discordapp.net/attachments/1374046118719258649/1374046219726491749/background.png?ex=682c9fc3&is=682b4e43&hm=fcc5ef6ce1a29b46caba5ae9674fed1c4d1d9a840eb79a0600aa087be97bb72d&=&format=webp&quality=lossless&width=1553&height=874);
     height: 100vh;
     margin: 0%;
     display: flex;
@@ -93,7 +93,7 @@ body {
     align-items: center;
     height: auto;
     width: 50%;
-    background-image: url(./public/imagewho.png);
+    background-image: url(https://media.discordapp.net/attachments/1374046118719258649/1374046220326142035/imagewho.png?ex=682c9fc3&is=682b4e43&hm=fe00231c15046692256e56cf00634d588317e400001b7446cef4de7b0330ba12&=&format=webp&quality=lossless&width=1162&height=874);
 }
 
 #whoare .whopic h1 {
